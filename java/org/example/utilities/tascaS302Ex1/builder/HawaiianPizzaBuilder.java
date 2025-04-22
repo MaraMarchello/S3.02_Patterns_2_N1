@@ -4,10 +4,10 @@ import org.example.utilities.tascaS302Ex1.model.DoughType;
 import org.example.utilities.tascaS302Ex1.model.Pizza;
 import org.example.utilities.tascaS302Ex1.model.PizzaSize;
 
-public class VegetarianPizzaBuilder implements PizzaBuilder {
+public class HawaiianPizzaBuilder implements PizzaBuilder {
 	private Pizza pizza;
 
-	public VegetarianPizzaBuilder() {
+	public HawaiianPizzaBuilder() {
 		reset();
 	}
 
@@ -43,10 +43,9 @@ public class VegetarianPizzaBuilder implements PizzaBuilder {
 	}
 
 	public PizzaBuilder addDefaultToppings() {
-		this.addTopping("Mushrooms");
-		this.addTopping("Bell Peppers");
-		this.addTopping("Onions");
-		this.addTopping("Olives");
+		this.addTopping("Ham");
+		this.addTopping("Pineapple");
+		this.addTopping("Mozzarella Cheese");
 		return this;
 	}
 }
